@@ -83,10 +83,4 @@ Se utilizaron prompts de apoyo para:
 
 ## Evidencias de ejecución
 
-Antes de entregar, agregar capturas donde se vea:
-
-- La vista Inicio.
-- La vista Tareas con actividades.
-- La vista Perfil.
-- Una tarea nueva agregada o marcada como completada.
-- El repositorio de GitHub con el código.
+Revisar carpeta "evidencias"
