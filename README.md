@@ -83,4 +83,44 @@ Se utilizaron prompts de apoyo para:
 
 ## Evidencias de ejecución
 
-Revisar carpeta "evidencias"
+### Vista Inicio
+
+![Vista Inicio](evidencias/inicio.jpeg)
+
+### Vista Tareas
+
+![Vista Tareas](evidencias/tareas.jpeg)
+
+### Agregar una tarea
+
+![Tarea agregada](evidencias/tarea_agregada.jpeg)
+
+### Tarea completada
+
+![Tarea completada](evidencias/tarea_completada.jpeg)
+
+### Vista Perfil
+
+![Vista Perfil](evidencias/perfil.jpeg)
+
+### Registro de ejecución
+
+![Registro](evidencias/registro.jpeg)
+
+### Repositorio Git
+
+![Repositorio Git](evidencias/repo_git.jpeg)
+
+## Evidencias de uso de IA
+
+### Prompt 1 — Modelo de datos
+
+![Prompt 1](evidencias/prompt_1.jpeg)
+
+### Prompt 2 — Servicio Angular
+
+![Prompt 2](evidencias/prompt_2.jpeg)
+
+### Prompt 3 — Navegación
+
+![Prompt 3](evidencias/prompt_3.jpeg)
