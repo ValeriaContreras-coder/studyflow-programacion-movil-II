@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>StudyFlow</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="welcome">
+    <p class="eyebrow">PROGRAMACIÓN MÓVIL II</p>
+    <h1>Mi panel de estudio</h1>
+    <p>Organiza tus actividades y lleva el control de tus pendientes.</p>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Resumen</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="stats">
+        <div class="stat">
+          <strong>{{ totalTasks() }}</strong>
+          <span>Total</span>
+        </div>
+
+        <div class="stat">
+          <strong>{{ pendingTasks() }}</strong>
+          <span>Pendientes</span>
+        </div>
+
+        <div class="stat">
+          <strong>{{ completedTasks() }}</strong>
+          <span>Completadas</span>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Próxima actividad</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      @if (nextTask()) {
+        <h2>{{ nextTask()!.title }}</h2>
+        <p>
+          {{ nextTask()!.subject }} · {{ nextTask()!.dueDate }}
+        </p>
+      } @else {
+        <p>No tienes actividades pendientes.</p>
+      }
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" routerLink="/tabs/tab2">
+    Ver mis tareas
+  </ion-button>
+</ion-content>

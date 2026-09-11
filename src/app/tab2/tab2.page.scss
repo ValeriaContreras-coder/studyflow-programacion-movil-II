@@ -1,0 +1,39 @@
+.page-heading {
+  padding: 24px 20px 8px;
+}
+
+.page-heading h1 {
+  margin-bottom: 6px;
+}
+
+.page-heading p {
+  margin-top: 0;
+  opacity: 0.7;
+}
+
+ion-list {
+  margin: 8px 12px 18px;
+}
+
+ion-item {
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+ion-card {
+  margin: 18px 20px 30px;
+  border-radius: 18px;
+}
+
+.field {
+  margin-top: 14px;
+}
+
+.add-button {
+  margin-top: 18px;
+}

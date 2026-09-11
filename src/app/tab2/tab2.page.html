@@ -1,0 +1,92 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Mis tareas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="page-heading">
+    <h1>Actividades</h1>
+    <p>Marca como completadas las actividades que ya terminaste.</p>
+  </div>
+
+  <ion-list inset="true">
+    @for (task of tasks(); track task.id) {
+      <ion-item>
+        <ion-checkbox
+          slot="start"
+          [checked]="task.completed"
+          (ionChange)="toggleTask(task.id)">
+        </ion-checkbox>
+
+        <ion-label>
+          <h2 [class.completed]="task.completed">{{ task.title }}</h2>
+          <p>{{ task.subject }}</p>
+          <p>Entrega: {{ task.dueDate }}</p>
+        </ion-label>
+
+        <ion-button
+          slot="end"
+          fill="clear"
+          color="danger"
+          aria-label="Eliminar tarea"
+          (click)="deleteTask(task.id)">
+          Eliminar
+        </ion-button>
+      </ion-item>
+    } @empty {
+      <ion-item>
+        <ion-label>
+          <h2>No hay tareas</h2>
+          <p>Agrega tu primera actividad usando el formulario.</p>
+        </ion-label>
+      </ion-item>
+    }
+  </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nueva tarea</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input
+        label="Título"
+        label-placement="stacked"
+        fill="outline"
+        placeholder="Ej. Investigar SQLite"
+        [(ngModel)]="title">
+      </ion-input>
+
+      <ion-input
+        class="field"
+        label="Materia"
+        label-placement="stacked"
+        fill="outline"
+        placeholder="Ej. Programación Móvil II"
+        [(ngModel)]="subject">
+      </ion-input>
+
+      <ion-input
+        class="field"
+        type="date"
+        label="Fecha de entrega"
+        label-placement="stacked"
+        fill="outline"
+        [(ngModel)]="dueDate">
+      </ion-input>
+
+      <ion-textarea
+        class="field"
+        label="Descripción"
+        label-placement="stacked"
+        fill="outline"
+        placeholder="Describe brevemente la actividad"
+        [(ngModel)]="description">
+      </ion-textarea>
+
+      <ion-button expand="block" class="add-button" (click)="addTask()">
+        Agregar tarea
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
