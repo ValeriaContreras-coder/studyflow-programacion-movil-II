@@ -115,14 +115,13 @@ Se utilizaron prompts de apoyo para:
 
 ### Prompt 1 — Modelo de datos
 
-![Prompt 1](evidencias/prompt_1.jpeg)
+![Promt 1](evidencias/promt_1.jpeg)
 
 ### Prompt 2 — Servicio Angular
 
-![Prompt 2](evidencias/prompt_2.jpeg)
+![Promt 2](evidencias/promt_2.jpeg)
 
 ### Prompt 3 — Navegación
 
-![Prompt 3](evidencias/prompt_3.jpeg)
+![Promt 3](evidencias/promt_3.jpeg)
 
-#### Nota: No se porque no se pueden ver las img de los promts, pero las 3 estan dentro de la carpeta "evidencias" adjunta al proyecto
