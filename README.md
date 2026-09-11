@@ -124,3 +124,5 @@ Se utilizaron prompts de apoyo para:
 ### Prompt 3 — Navegación
 
 ![Prompt 3](evidencias/prompt_3.jpeg)
+
+####Nota: No se porque no se pueden ver las img de los promts, pero las 3 estan dentro de la carpeta "evidencias" adjunta al proyecto
